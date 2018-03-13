@@ -1,0 +1,13 @@
+name: BarPlus
+version: 1.0-INDEV
+main: Napol\BarPlus
+author: NapolGamer TH
+load: POSTWORLD
+api:
+- 3.0.0-ALPHA8
+- 3.0.0-ALPHA9
+- 3.0.0-ALPHA10
+- 3.0.0-ALPHA11
+website: https://github.com/NapolGamerTH/BarPlus
+description: Custom your bar hud in server
+
