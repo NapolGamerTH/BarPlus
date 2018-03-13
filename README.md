@@ -3,12 +3,13 @@ this plugin can custom your hud bar in server
 ___
 |Text|how to show|Plugin|
 |----|-----------|------|
-|{player}|name player|`none`|
+|{name}|name player|`none`|
 |{group}|show your group|`PurePerms`|
 |{factions}|show your guilds & clan|`FactionsPro`|
 |{money}|show your money|`EconomyAPI`|
 |{gm}|show your gamemode|`none`|
 |{ip}|show your IP|`none`|
+|{ping}|show your ping|`none`|
 |{online}|show current player|`none`|
 |{max_online}|show max player|`none`|
 |{hp}|show your health|`none`|
