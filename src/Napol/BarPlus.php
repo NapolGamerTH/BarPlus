@@ -21,6 +21,9 @@ public $PP;
 public function onEnable() {
     if (!$this->isSpoon()) {
     @mkdir($this->getDataFolder());
+    $this->Config = new Config($this->getDataFolder()."config.yml", Config::YAML);  
+    $this->Config->save(); 
+    $this->Config->reload();
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
     $this->eco = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
     $this->getServer()->getScheduler()->scheduleRepeatingTask(new BarTask($this), 2);
