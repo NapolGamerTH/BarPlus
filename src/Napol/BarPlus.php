@@ -20,10 +20,6 @@ public $PP;
 
 public function onEnable() {
     if (!$this->isSpoon()) {
-    @mkdir($this->getDataFolder());
-    $this->Config = new Config($this->getDataFolder()."config.yml", Config::YAML);  
-    $this->Config->save(); 
-    $this->Config->reload();
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
     $this->eco = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
     $this->getServer()->getScheduler()->scheduleRepeatingTask(new BarTask($this), 2);
@@ -199,7 +195,7 @@ $bar = str_replace("{R22}", "§".$colors22[array_rand($colors22)], $bar);
 $bar = str_replace("{R23}", "§".$colors23[array_rand($colors23)], $bar);
      $h = str_repeat(" ", 90);
      $h2 = str_repeat(" ", 40);
-     $n = str_repeat("\n", 20);
+     $n = str_repeat("\n", 15);
 $bar = str_replace("{h}", $h, $bar);
 $bar = str_replace("{h2}", $h2, $bar);
 $bar = str_replace("{n}", $n, $bar);
