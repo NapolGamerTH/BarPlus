@@ -20,6 +20,7 @@
 #{tag} -        บนหัว (name tag) <<<<<<<
 #{kills} -      จำนวนฆาตกรรมทั้งหมด (kills) <<<<<<<
 #{deaths} -     ตายรวม (deaths) <<<<<<<
+#{ping} -       แสดงปิงในเซิฟ (ping) <<<<<<<<
 #{R1}-{R23} -   สุ่มสีข้อความ มี{R1}ถึง{R23} (random colors have {R1} - {R23}) <<<<<<
 #{h} -          บาร์ทำให้ชิดขวา[ใส่ทุกครั้งที่ใช้ \n ] (make bar right) <<<<<<
 #{n} -          ยกบาร์ขึ้น (raise the bar) <<<<<<
@@ -28,5 +29,6 @@
 #=================================
 
 bar: "{h}§l§7({R1}MC§f-{R2}Car{R15}rot{R3}Craft{R4}PE§f)§r\n{h}§l§a»§eสวัสดี§b: §c{R4}{name}§r\n{h}§l§a»§eยศ§b: {R3}{group}§r\n{h}§l§a»§eออนไลน์§b: §a{online}§8/§c{max_online}§r\n{h}§l§a»§eเงิน§b: §6{money}§r\n{h}§l§a»§eแคลน§b: §f{faction}§r\n{h}§l§a»§eItem§b: {R2}{item}§r\n{h}§l§a»§eID§b: {R1}{id}:{ids}§r\n§r{h}§l§a»§eฆ่า§b: §c{kills}§r\n{h}§l§a»§eตาย§b: §c{deaths}§r\n{h}§l§a»§eพิกัด§b: {R10}{x}§f/{R11}{y}§f/{R12}{z}§r\n{h}§l§a»§eปิง§b: §a{ping}§r{n}"
+
 #=================================
 ...
