@@ -1,6 +1,6 @@
 <?php
 
-namespace Napok;
+namespace Napol;
 
 use Napol\Tasks\BarTask;
 use pocketmine\event\Listener;
@@ -19,6 +19,8 @@ public $eco;
 public $PP;
 
 public function onEnable() {
+    if (!$this->isSpoon()) {
+    @mkdir($this->getDataFolder());
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
     $this->eco = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
     $this->getServer()->getScheduler()->scheduleRepeatingTask(new BarTask($this), 2);
@@ -29,6 +31,19 @@ public function onEnable() {
     $config = $this->getConfig();
     $this->saveResource("config.yml");
  	}
+}
+
+public function isSpoon() {
+        if ($this->getServer()->getName() !== "Altay") {
+            $this->getLogger()->error("This spoon plugin cant run...");
+            return true;
+        }
+        if ($this->getDescription()->getAuthors() !== ["NapolGamer TH"] || $this->getDescription()->getName() !== "BarPlus") {
+            $this->getLogger()->error("You are not using original version!");
+            return true;
+        }
+        return false;
+    }
  	
 	public function onJoin(PlayerJoinEvent $event){
   $name = $event->getPlayer()->getName();
