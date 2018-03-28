@@ -33,7 +33,7 @@ public function onEnable() {
 }
 
 public function isSpoon() {
-        if ($this->getServer()->getName() !== "Altay") {
+        if ($this->getServer()->getName() !== ["Altay", "PocketMine-MP"]) {
             $this->getLogger()->error("This spoon plugin cant run...");
             return true;
         }
